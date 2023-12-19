@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 app.use(cors({
-    origin: ["http://localhost:3000","http://https://marn-task-app.onrender.com"]
+    origin: ["http://localhost:3000","https://marn-task-app.onrender.com"]
 }));
 app.use("/api/tasks",taskRoutes);
 
